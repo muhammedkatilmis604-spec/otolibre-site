@@ -231,27 +231,45 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 992px) {
     .nav-container {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         position: relative;
+        min-height: 50px;
     }
     
     .logo {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-    }
-
-    .theme-toggle {
-        position: relative;
-        top: 0;
-        right: 0;
-        z-index: 1001;
+        margin: 0;
     }
 
     .menu-btn {
-        display: block;
-        order: -1;
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0;
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: 1px solid var(--glass-border);
+        background-color: var(--bg-tertiary);
+        z-index: 1001;
+        font-size: 1.25rem;
+    }
+
+    .theme-toggle {
+        display: flex;
+        position: absolute;
+        right: 0;
+        left: auto;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0;
         z-index: 1001;
     }
 
