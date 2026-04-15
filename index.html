@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otolibre | Otomobil Kültürünü Keşfet</title>
+    <meta name="description" content="Otolibre ile dikkat çekici otomobilleri, tasarımları ve otomobil kültürünü keşfedin.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- JS for Otolibre Content (Medya-Vitrin) -->
+    <script src="js/main.js" defer></script>
+    
+    <!-- Phosphor Icons (for minimal icons) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- GSAP for Smooth Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Otolibre<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="about.html">Hakkında</a></li>
+                <li><a href="featured.html">Öne Çıkan İçerikler</a></li>
+                <li><a href="archive.html">İçerikler</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <i class="ph ph-moon"></i>
+                <i class="ph ph-sun"></i>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-bg">
+            <img src="assets/hero_bg.png" alt="Supercar in dark">
+            <div class="overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <h1 class="reveal-up">Otomobil Kültürünü Keşfet</h1>
+            <p class="reveal-up delay-1">Otolibre ile dikkat çekici otomobilleri, tasarımları ve otomobil kültürünü keşfedin.</p>
+        </div>
+    </header>
+
+    <!-- Cinematic Atmospheric Mosaic -->
+    <section class="mosaic-showcase">
+        <div class="container">
+            <!-- Premium Showroom / Interactive Tabs -->
+            <div class="premium-showroom reveal-up delay-1">
+                
+                <div class="showroom-sidebar">
+                    <div class="mosaic-header" style="text-align: left; margin-bottom: 2rem;">
+                        <span class="editorial-label">Estetik & Tasarım</span>
+                        <h2 style="font-size: 2.5rem; margin-top: 0.5rem; line-height: 1.1;">Tutku ve Mühendislik</h2>
+                        <p style="margin: 1rem 0; font-size: 0.95rem;">Sanatın ve mühendisliğin dünü, bugünü ve yarınını keşfedin.</p>
+                    </div>
+
+                    <div class="showroom-menu">
+                        <div class="showroom-tab active" data-target="sr-tasarim">
+                            <span class="tab-title">Tasarım</span>
+                            <span class="tab-desc">Göz alan detaylar</span>
+                        </div>
+                        <div class="showroom-tab" data-target="sr-performans">
+                            <span class="tab-title">Performans</span>
+                            <span class="tab-desc">Sınır tanımayan güç</span>
+                        </div>
+                        <div class="showroom-tab" data-target="sr-muhendislik">
+                            <span class="tab-title">Mühendislik</span>
+                            <span class="tab-desc">Mekanik hassasiyet</span>
+                        </div>
+                        <div class="showroom-tab" data-target="sr-kultur">
+                            <span class="tab-title">Kültür</span>
+                            <span class="tab-desc">Değişmeyen tutku</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="showroom-display">
+                    <!-- Display 1 -->
+                    <div class="display-item active" id="sr-tasarim">
+                        <img src="assets/hypercar_1.png" alt="Tasarım">
+                        <div class="display-overlay"></div>
+                        <div class="display-content">
+                            <h3>Aerodinamik Sınırlar</h3>
+                            <p>Mühendislik ve estetiğin kusursuz birleşimi, rüzgarı yaran bir silüet.</p>
+                            <a href="featured-hypercar.html" class="btn btn-outline btn-sm">Keşfet</a>
+                        </div>
+                    </div>
+                    <!-- Display 2 -->
+                    <div class="display-item" id="sr-performans">
+                        <img src="assets/strip_performance.png" alt="Performans">
+                        <div class="display-overlay"></div>
+                        <div class="display-content">
+                            <h3>Dinamik Güç</h3>
+                            <p>Asfalta tutunma tutkusu: Yüksek devirler ve sınır tanımayan güç üniteleri.</p>
+                            <a href="featured-performance.html" class="btn btn-outline btn-sm">Keşfet</a>
+                        </div>
+                    </div>
+                    <!-- Display 3 -->
+                    <div class="display-item" id="sr-muhendislik">
+                        <img src="assets/strip_engineering.png" alt="Mühendislik">
+                        <div class="display-overlay"></div>
+                        <div class="display-content">
+                            <h3>Mekanik Sanat</h3>
+                            <p>Kesintisiz mühendislik arayışının milimetrik hassasiyetle birleştiği anlar.</p>
+                            <a href="featured-engineering.html" class="btn btn-outline btn-sm">Keşfet</a>
+                        </div>
+                    </div>
+                    <!-- Display 4 -->
+                    <div class="display-item" id="sr-kultur">
+                        <img src="assets/strip_culture.png" alt="Kültür">
+                        <div class="display-overlay"></div>
+                        <div class="display-content">
+                            <h3>Tutku ve Miras</h3>
+                            <p>Garajlardan yarış pistlerine; asla eskimeyen ve sürekli evrilen otomobil tutkusu.</p>
+                            <a href="archive.html" class="btn btn-outline btn-sm">Keşfet</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Featured Cars / Showcase -->
+    <section class="featured-cars" id="featured-cars">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="editorial-label">Koleksiyon</span>
+                <h2>Öne Çıkan İçerikler</h2>
+                <p>Tasarım ve mühendisliğin zirvesine odaklanan özel incelemelerimiz.</p>
+            </div>
+            <div class="bento-grid">
+                <!-- Large Feature Card -->
+                <div class="bento-card large reveal-up" data-article="hypercar">
+                    <img src="assets/featured_bento_main.png" alt="Hypercar Design detail">
+                    <div class="bento-content">
+                        <h3>Tasarımın Gücü</h3>
+                        <p>Mühendislik ve estetiğin kusursuz birleşimi.</p>
+                        <a href="featured-hypercar.html" class="btn btn-outline btn-sm">İncele</a>
+                    </div>
+                </div>
+                
+                <!-- Performance Feature Card -->
+                <div class="bento-card medium reveal-up delay-1" data-article="performance">
+                    <img src="assets/featured_bento_1.png" alt="Performance Interior">
+                    <div class="bento-content">
+                        <h3>Performans</h3>
+                        <p>Hızın ve kontrolün sanatı.</p>
+                        <a href="featured-performance.html" class="btn btn-outline btn-sm">İncele</a>
+                    </div>
+                </div>
+
+                <!-- Engineering Feature Card -->
+                <div class="bento-card small reveal-up delay-2" data-article="engineering">
+                    <img src="assets/featured_bento_2.png" alt="Engineering Detail">
+                    <div class="bento-content">
+                        <h3>Mühendislik</h3>
+                        <p>Teknik deha.</p>
+                        <a href="featured-engineering.html" class="btn btn-outline btn-sm">İncele</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Content Panel -->
+    <section class="visual-panel" id="archive">
+        <div class="container" style="max-width: 1400px;">
+            <div class="section-header reveal-up">
+                <h2>İçerikler</h2>
+                <p>Otomobil analizleri, pazar trendleri ve kültür incelemelerimiz.</p>
+            </div>
+            
+            <div class="expanding-cards reveal-up delay-1">
+                <!-- Blog 1 -->
+                <a href="article-skoda.html" class="panel-card">
+                    <div class="card-bg">
+                        <img src="assets/blog_1.png" alt="Skoda Yeti">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="panel-content">
+                        <div class="panel-meta">
+                            <span class="category">İnceleme</span>
+                        </div>
+                        <h3>Hepsi Bir Arada Skoda Yeti</h3>
+                        <div class="panel-hidden-desc">
+                            <p>Kompakt boyutları ve şaşırtıcı iç hacmiyle sınıfının ötesinde bir deneyim sunan bir otomobil mirası.</p>
+                            <span class="read-more">Okumaya Devam Et <i class="ph ph-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Blog 2 -->
+                <a href="article-cupra.html" class="panel-card">
+                    <div class="card-bg">
+                        <img src="assets/blog_2.png" alt="Cupra Formentor">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="panel-content">
+                        <div class="panel-meta">
+                            <span class="category">Trendler</span>
+                        </div>
+                        <h3>Büyük ve Yakışıklı Cupra Formentor</h3>
+                        <div class="panel-hidden-desc">
+                            <p>Agresif hatları ve sportif sürüş dinamikleriyle crossover segmentinde fark yaratan yeni nesil bir güç.</p>
+                            <span class="read-more">Okumaya Devam Et <i class="ph ph-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Blog 3 -->
+                <a href="article-hatchback.html" class="panel-card active">
+                    <div class="card-bg">
+                        <img src="assets/blog_3.png" alt="Golf Tuning">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="panel-content">
+                        <div class="panel-meta">
+                            <span class="category">Oto Kültürü</span>
+                        </div>
+                        <h3>Sokakların Hakimi: Hatchback Kültürü</h3>
+                        <div class="panel-hidden-desc">
+                            <p>Sadece bir otomobil değil, modifiye kültürü ve gece sürüşlerinin vazgeçilmez bir parçası.</p>
+                            <span class="read-more">Okumaya Devam Et <i class="ph ph-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Blog 4 -->
+                <a href="article-ferrari.html" class="panel-card">
+                    <div class="card-bg">
+                        <img src="assets/blog_4.png" alt="Ferrari Aesthetic">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="panel-content">
+                        <div class="panel-meta">
+                            <span class="category">İnceleme</span>
+                        </div>
+                        <h3>Kusursuz Mühendislik: Kırmızı Tutku</h3>
+                        <div class="panel-hidden-desc">
+                            <p>Aerodinamik sınırları zorlayan çizgiler ve saf sürüş odaklı bir tasarım felsefesi.</p>
+                            <span class="read-more">Okumaya Devam Et <i class="ph ph-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Blog 5 -->
+                <a href="article-mercedes.html" class="panel-card">
+                    <div class="card-bg">
+                        <img src="assets/blog_5.png" alt="Mercedes Sedan">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="panel-content">
+                        <div class="panel-meta">
+                            <span class="category">Trendler</span>
+                        </div>
+                        <h3>Güç ve Zarafet: Premium Sedan</h3>
+                        <div class="panel-hidden-desc">
+                            <p>Konfordan ödün vermeden agresif performansı bir arada sunan Alman mühendisliğinin zirvesi.</p>
+                            <span class="read-more">Okumaya Devam Et <i class="ph ph-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Blog 6 -->
+                <a href="article-porsche.html" class="panel-card">
+                    <div class="card-bg">
+                        <img src="assets/blog_6.png" alt="Porsche 911">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="panel-content">
+                        <div class="panel-meta">
+                            <span class="category">Otomobil Kültürü</span>
+                        </div>
+                        <h3>Zamanın Ötesinde Bir Silüet: 911 Mirası</h3>
+                        <div class="panel-hidden-desc">
+                            <p>Yıllar geçse de değişmeyen o ikonik hatlar ve klasikleşmiş sürüş deneyimi.</p>
+                            <span class="read-more">Okumaya Devam Et <i class="ph ph-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="text-center mt-5 reveal-up">
+                <a href="archive.html" class="btn btn-outline">Tüm İçerikleri Gör</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h2>Otolibre<span>.</span></h2>
+                    <p>Minimal, modern ve güçlü. Otomobil kültürünün yeni adresi.</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Bizi ziyaret edin</h3>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/otolibre/" target="_blank"><i class="ph ph-instagram-logo"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Otolibre. Tüm hakları gizlidir.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

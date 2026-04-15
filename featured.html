@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Öne Çıkanlar | Otolibre</title>
+    <meta name="description" content="Otolibre öne çıkan otomobil tasarımları, performans ve mühendislik harikaları.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- JS -->
+    <script src="js/main.js" defer></script>
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+</head>
+<body class="article-page">
+
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Otolibre<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="about.html">Hakkında</a></li>
+                <li><a href="featured.html">Öne Çıkan İçerikler</a></li>
+                <li><a href="archive.html">İçerikler</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <i class="ph ph-moon"></i>
+                <i class="ph ph-sun"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Featured Cars / Showcase -->
+    <section class="featured-cars" id="featured-cars" style="padding-top: 5rem;">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="editorial-label">Koleksiyon</span>
+                <h2>Öne Çıkan İçerikler</h2>
+                <p>Tasarım ve mühendisliğin zirvesine odaklanan özel incelemelerimiz.</p>
+            </div>
+
+            <div class="bento-grid">
+                <!-- Large Feature Card -->
+                <div class="bento-card large reveal-up">
+                    <img src="assets/featured_bento_main.png" alt="Hypercar Design detail">
+                    <div class="bento-content">
+                        <h3>Tasarımın Gücü</h3>
+                        <p>Mühendislik ve estetiğin kusursuz birleşimi.</p>
+                        <a href="featured-hypercar.html" class="btn btn-outline btn-sm">İncele</a>
+                    </div>
+                </div>
+                
+                <!-- Performance Feature Card -->
+                <div class="bento-card medium reveal-up delay-1">
+                    <img src="assets/featured_bento_1.png" alt="Performance Interior">
+                    <div class="bento-content">
+                        <h3>Performans</h3>
+                        <p>Hızın ve kontrolün sanatı.</p>
+                        <a href="featured-performance.html" class="btn btn-outline btn-sm">İncele</a>
+                    </div>
+                </div>
+
+                <!-- Engineering Feature Card -->
+                <div class="bento-card small reveal-up delay-2">
+                    <img src="assets/featured_bento_2.png" alt="Engineering Detail">
+                    <div class="bento-content">
+                        <h3>Mühendislik</h3>
+                        <p>Teknik deha.</p>
+                        <a href="featured-engineering.html" class="btn btn-outline btn-sm">İncele</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h2>Otolibre<span>.</span></h2>
+                    <p>Minimal, modern ve güçlü. Otomobil kültürünün yeni adresi.</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Bizi ziyaret edin</h3>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/otolibre/" target="_blank"><i class="ph ph-instagram-logo"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Otolibre. Tüm hakları gizlidir.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
