@@ -57,10 +57,29 @@ function initNavigation() {
 }
 
 /**
- * Mobile Menu Logic (Removed per user request to avoid hamburger icon)
+ * Mobile Menu Logic (Hamburger icon)
  */
 function initMobileMenu() {
-    // Left intentionally blank. Navbar links will adapt via CSS.
+    const menuBtn = document.querySelector('.menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+    
+    if (menuBtn && navLinks) {
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            
+            // Optional: Change icon depending on state
+            const icon = menuBtn.querySelector('i');
+            if (icon) {
+                if (navLinks.classList.contains('active')) {
+                    icon.classList.remove('ph-list');
+                    icon.classList.add('ph-x');
+                } else {
+                    icon.classList.remove('ph-x');
+                    icon.classList.add('ph-list');
+                }
+            }
+        });
+    }
 }
 
 /**
